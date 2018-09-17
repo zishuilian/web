@@ -1,28 +1,50 @@
-<html >
-<head>
-<title>¶¯Ì¬Ìí¼Ó±íµ¥ÔªËØ</title>
-</head>
-<body>
-<form action="" method="get" name="frm">
-<div id="tab"></div>
-<input id="Button1" type="button" value="button" onclick="addtab(3,5)"/>
-<script language="javascript" type="text/javascript">
-function addtab(r,c) { //´´½¨rĞĞcÁĞµÄ±í¸ñ
-var odiv = document.getElementById("tab");
-var oTable = document.createElement("table");
-oTable.setAttribute("border", 1, 0);
-oTable.setAttribute("width", "600px");
-oTable.className="datatable";
-oTable.setAttribute("class", "table table-striped table-bordered table-hover bootstrap-datatable datatable responsive");
-for (i = 0; i < r; i++) {
-var tr = oTable.insertRow();
-for (j = 0; j < c; j++) {
-var td = tr.insertCell();
-td.innerHTML = "µÚ" + (i + 1) + "ĞĞ£¬µÚ" + (j + 1) + "ÁĞ";
-}
-}
-odiv.appendChild(oTable);
-}
-</script>
-</body>
+
+<!DOCTYPE html>
+<link id="bs-css" href="css/bootstrap-cerulean.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/charisma-app.css" rel="stylesheet">
+    <link href='bower_components/fullcalendar/dist/fullcalendar.css' rel='stylesheet'>
+    <link href='bower_components/fullcalendar/dist/fullcalendar.print.css' rel='stylesheet' media='print'>
+    <link href='bower_components/chosen/chosen.min.css' rel='stylesheet'>
+    <link href='bower_components/colorbox/example3/colorbox.css' rel='stylesheet'>
+    <link href='bower_components/responsive-tables/responsive-tables.css' rel='stylesheet'>
+    <link href='bower_components/bootstrap-tour/build/css/bootstrap-tour.min.css' rel='stylesheet'>
+    <link href='css/jquery.noty.css' rel='stylesheet'>
+    <link href='css/noty_theme_default.css' rel='stylesheet'>
+    <link href='css/elfinder.min.css' rel='stylesheet'>
+    <link href='css/elfinder.theme.css' rel='stylesheet'>
+    <link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
+    <link href='css/uploadify.css' rel='stylesheet'>
+    <link href='css/animate.min.css' rel='stylesheet'>
+<html>
+<style>
+    #nav li:hover ul{
+            display: block;
+        }
+</style>
+    <head>
+        <meta charset="UTF-8">
+        <title>åƒè´§çš„å¯¼èˆªæ </title>
+    </head>
+    <body>
+     <ul id="nav" class="nav nav-pills main-menu">
+                        <li class="accordion">
+                            <a href="#"><i class="glyphicon glyphicon-plus"></i><span>è¥æ”¶ç»“ç®—</span></a>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">å”®ç¥¨æ±‡æ€»</a></li>
+                                <li><a href="#">é€€ç¥¨æ±‡æ€»</a></li>
+                            </ul>
+                        </li>
+                         <li class="accordion">
+                            <a href="#"><i class="glyphicon glyphicon-plus"></i><span>ç¥¨åŠ¡ç®¡ç†</span></a>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">é¢„å”®ç¥¨è®¾ç½®</a></li>
+                                <li><a href="#">é€€ç¥¨è®¾ç½®</a></li>
+                                <li><a href="#">ç¥¨ä»·è®¾ç½®</a></li>
+                            </ul>
+                        </li>
+                        <li class="div1"><a class="ajax-link" href="index.html"><i class="glyphicon glyphicon-home"></i><span> ç”¨æˆ·æƒé™ç®¡ç†</span></a></li>
+                        <li class="div1"><a class="ajax-link" href="index.html"><i class="glyphicon glyphicon-home"></i><span> çº¿è·¯è®¾ç½®</span></a></li>
+                    </ul>
+    </body>
 </html>
